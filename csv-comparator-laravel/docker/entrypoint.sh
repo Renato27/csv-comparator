@@ -1,6 +1,8 @@
 #!/bin/bash
 
-chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
-chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+if [ ! -f /var/www/.env ]; then
+  cp /var/www/.env.example /var/www/.env
+  php /var/www/artisan key:generate
+fi
 
 exec "$@"

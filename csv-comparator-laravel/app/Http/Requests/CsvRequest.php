@@ -22,8 +22,8 @@ class CsvRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'old_file' => 'required|file|mimes:csv',
-            'new_file' => 'required|file|mimes:csv',
+            'old_file' => 'required|file|mimes:csv,txt',
+            'new_file' => 'required|file|mimes:csv,txt',
         ];
     }
 }
