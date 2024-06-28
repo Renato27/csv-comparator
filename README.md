@@ -6,20 +6,20 @@ Este projeto contém duas implementações para comparação de arquivos CSV:
 
 ## Estrutura do Projeto
 
-/csv-comparator-laravel # Projeto Laravel
-/public
-/css
-/uploads
-index.php
-upload.php
-/src
-/classes
-CsvComparator.php
-/uploads
-.gitignore
-docker-compose.yml
-Dockerfile
-README.md
+- /csv-comparator-laravel # Projeto Laravel
+- /public
+- /css
+- /uploads
+- index.php
+- upload.php
+- /src
+- /classes
+- CsvComparator.php
+- /uploads
+- .gitignore
+- docker-compose.yml
+- Dockerfile
+- README.md
 
 
 ## Projeto Laravel
