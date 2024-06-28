@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+      - ./src:/var/www/src
+      - ./uploads:/var/www/html/uploads
+    networks:
+      - webnet
+
+networks:
+  webnet:
